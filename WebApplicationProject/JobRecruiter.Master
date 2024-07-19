@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JobRecruiter.master.cs" Inherits="WebApplicationProject.JobRecruiter" %>
+<%@ Register Src="~/Header.ascx" TagName="myhead" TagPrefix="asp" %>
+<%@ Register Src="~/Footer.ascx" TagName="myfoot" TagPrefix="asp" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="menu.css" rel="stylesheet" />
+    <script src="menu.js"></script>
+    <script src="jquery.js"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+
+    <tr>
+        <td>
+            <asp:myhead Id="h1" runat="server"></asp:myhead>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <div id="menu">
+                <ul class="menu">
+
+                    <li><a href="#"><span>Help</span></a></li>
+                    <li class="last"><a href="#"><span>Contacts</span></a></li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="height: 330px; background-color: lightcyan">
+            <center>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </center>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <asp:myfoot Id="f1" runat="server"></asp:myfoot>
+        </td>
+    </tr>
+
+</table>
+        </div>
+    </form>
+</body>
+</html>
