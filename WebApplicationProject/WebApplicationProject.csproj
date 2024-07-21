@@ -64,6 +64,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminModule\AdminHome.aspx" />
     <Content Include="AdminModule\MasterJobRecruiter.aspx" />
     <Content Include="AdminModule\MasterJobSeeker.aspx" />
     <Content Include="Footer.ascx" />
@@ -75,10 +76,13 @@
     <Content Include="images\lava.png" />
     <Content Include="images\main-bg.png" />
     <Content Include="images\main-delimiter.png" />
+    <Content Include="JobRecruiterModule\JobRecruiterHome.aspx" />
     <Content Include="JobRecruiterRegistration.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerHome.aspx" />
     <Content Include="JobSeekerRegistration.aspx" />
     <Content Include="jquery.js" />
     <Content Include="LoginForm.aspx" />
+    <Content Include="LogoutForm.aspx" />
     <Content Include="menu.css" />
     <Content Include="menu.js" />
     <Content Include="R.jpeg" />
@@ -91,6 +95,13 @@
     </Compile>
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminModule\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminModule\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminModule\MasterJobRecruiter.aspx.cs">
       <DependentUpon>MasterJobRecruiter.aspx</DependentUpon>
@@ -134,6 +145,13 @@
     <Compile Include="JobRecruiter.Master.designer.cs">
       <DependentUpon>JobRecruiter.Master</DependentUpon>
     </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterHome.aspx.cs">
+      <DependentUpon>JobRecruiterHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterHome.aspx.designer.cs">
+      <DependentUpon>JobRecruiterHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JobRecruiterRegistration.aspx.cs">
       <DependentUpon>JobRecruiterRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,6 +166,13 @@
     <Compile Include="JobSeeker.Master.designer.cs">
       <DependentUpon>JobSeeker.Master</DependentUpon>
     </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerHome.aspx.cs">
+      <DependentUpon>JobSeekerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerHome.aspx.designer.cs">
+      <DependentUpon>JobSeekerHome.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JobSeekerRegistration.aspx.cs">
       <DependentUpon>JobSeekerRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -161,6 +186,13 @@
     </Compile>
     <Compile Include="LoginForm.aspx.designer.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogoutForm.aspx.cs">
+      <DependentUpon>LogoutForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogoutForm.aspx.designer.cs">
+      <DependentUpon>LogoutForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -179,9 +211,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="JobRecruiterImages\" />
-    <Folder Include="JobRecruiterModule\" />
     <Folder Include="JobSeekerImages\" />
-    <Folder Include="JobSeekerModule\" />
     <Folder Include="JobSeekerResumes\" />
   </ItemGroup>
   <PropertyGroup>

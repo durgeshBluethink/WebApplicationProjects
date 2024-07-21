@@ -4,6 +4,17 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table>
+        <tr>
+            <td>User Type: </td>
+            <td>
+                <asp:DropDownList ID="ddlusertype" runat="server" >
+                    <asp:ListItem Text="--Select--" Value="0"></asp:ListItem>
+                    <asp:ListItem Text="Admin" Value="1"></asp:ListItem>
+                    <asp:ListItem Text="JobSeeker" Value="2"></asp:ListItem>
+                    <asp:ListItem Text="JobRecruiter" Value="3"></asp:ListItem>
+                </asp:DropDownList>
+            </td>
+        </tr>
 
         <tr>
             <td>Email: </td>

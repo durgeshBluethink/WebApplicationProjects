@@ -15,6 +15,15 @@ namespace WebApplicationProject
     {
 
         /// <summary>
+        /// ddlusertype control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlusertype;
+
+        /// <summary>
         /// txtemail control.
         /// </summary>
         /// <remarks>

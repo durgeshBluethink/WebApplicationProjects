@@ -20,20 +20,61 @@ namespace WebApplicationProject
 
         protected void btnlogin_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("select from tblJobSeeker where JobSeekerEmail= '"+txtemail.Text+"' and JobSeekerPassword='"+txtpassword.Text+"'", conn);
-            SqlDataAdapter ad = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            conn.Close();
+            if (ddlusertype.SelectedValue == "1")
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT* from tblAdmin where AdminEmail= '" + txtemail.Text + "' and AdminPassword='" + txtpassword.Text + "'", conn);
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+                conn.Close();
 
-            if(dt.Rows.Count > 0)
-            {
-                Response.Redirect("JobSeekerHome.aspx");
+                if (dt.Rows.Count > 0)
+                {
+                    Response.Redirect("~/AdminModule/AdminHome.aspx");
+                }
+                else
+                {
+                    lblmsg.Text = "Login Failed!";
+                }
+
             }
-            else
+            else if (ddlusertype.SelectedValue == "2")
             {
-                lblmsg.Text = "Login Failed!";
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT* from tblJobSeeker where JobSeekerEmail= '" + txtemail.Text + "' and JobSeekerPassword='" + txtpassword.Text + "'", conn);
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+                conn.Close();
+
+                if (dt.Rows.Count > 0)
+                {
+                    Response.Redirect("~/JobSeekerModule/JobSeekerHome.aspx");
+                }
+                else
+                {
+                    lblmsg.Text = "Login Failed!";
+                }
+
+            }
+            else if (ddlusertype.SelectedValue == "3")
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT* from tblJobRecruiter where JobRecruiterEmail= '" + txtemail.Text + "' and JobRecruiterPassword='" + txtpassword.Text + "'", conn);
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+                conn.Close();
+
+                if (dt.Rows.Count > 0)
+                {
+                    Response.Redirect("~/JobRecruiterModule/JobRecruiterHome.aspx");
+                }
+                else
+                {
+                    lblmsg.Text = "Login Failed!";
+                }
             }
 
         }

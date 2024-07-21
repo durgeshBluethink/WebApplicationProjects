@@ -28,16 +28,15 @@
                     <td>
                         <div id="menu">
                             <ul class="menu">
-
-                                <li><a href="#"><span>Help</span></a></li>
-                                <li class="last"><a href="#"><span>Contacts</span></a></li>
+                                <li><a href="JobSeekerModule/JobSeekerHome.aspx"><span>Home</span></a></li>
+                                <li class="last"><a href="../LogoutForm.aspx"><span>Logout</span></a></li>
                             </ul>
                         </div>
                     </td>
                 </tr>
 
                 <tr>
-                    <td style="height: 330px; background-color: lightcyan">
+                    <td style="height: 330px; background-color: lightcyan;  vertical-align:top">
                         <center>
                             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                             </asp:ContentPlaceHolder>

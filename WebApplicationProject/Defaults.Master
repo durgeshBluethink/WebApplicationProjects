@@ -20,9 +20,9 @@
          <td>
              <div id="menu">
                  <ul class="menu">
-
                      <li><a href="JobSeekerRegistration.aspx"><span>JobSeekerRegistration</span></a></li>
                      <li class="last"><a href="JobRecruiterRegistration.aspx"><span>JobRecruiterRegistration</span></a></li>
+                     <li class="last"><a href="../LoginForm.aspx"><span>Login</span></a></li>
                  </ul>
              </div>
          </td>
@@ -37,7 +37,7 @@
 
 
      <tr>
-         <td style="height: 330px; background-color: lightcyan">
+         <td style="height: 330px; background-color: lightcyan;  vertical-align:top ">
              <center>
                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                  </asp:ContentPlaceHolder>
