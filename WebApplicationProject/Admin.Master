@@ -27,6 +27,7 @@
                                 <li class="last"><a href="../AdminModule/AdminHome.aspx"><span>Home</span></a></li>
                                 <li><a href="../AdminModule/MasterJobSeeker.aspx"><span>Master JobSeeker</span></a></li>
                                 <li class="last"><a href="../AdminModule/MasterJobRecruiter.aspx"><span>Master JobRecruiter</span></a></li>
+                                <li><a href="../AdminModule/AdminManageJobPost.aspx"><span>Master JobPost</span></a></li>
                                 <li class="last"><a href="../LogoutForm.aspx"><span>Logout</span></a></li>
                             </ul>
                         </div>

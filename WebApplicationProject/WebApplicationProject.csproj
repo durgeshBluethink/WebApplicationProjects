@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdminModule\AdminHome.aspx" />
+    <Content Include="AdminModule\AdminManageJobPost.aspx" />
     <Content Include="AdminModule\MasterJobRecruiter.aspx" />
     <Content Include="AdminModule\MasterJobSeeker.aspx" />
     <Content Include="Footer.ascx" />
@@ -78,9 +79,11 @@
     <Content Include="images\main-delimiter.png" />
     <Content Include="JobRecruiterModule\JobRecruiterHome.aspx" />
     <Content Include="JobRecruiterModule\JobRecruiterJobPost.aspx" />
+    <Content Include="JobRecruiterModule\JobRecruiterJobPostShow.aspx" />
     <Content Include="JobRecruiterRegistration.aspx" />
     <Content Include="JobSeekerModule\JobSeekerHome.aspx" />
     <Content Include="JobSeekerModule\JobSeekerJobPost.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerShowJobPost.aspx" />
     <Content Include="JobSeekerRegistration.aspx" />
     <Content Include="jquery.js" />
     <Content Include="LoginForm.aspx" />
@@ -104,6 +107,13 @@
     </Compile>
     <Compile Include="AdminModule\AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminModule\AdminManageJobPost.aspx.cs">
+      <DependentUpon>AdminManageJobPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminModule\AdminManageJobPost.aspx.designer.cs">
+      <DependentUpon>AdminManageJobPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminModule\MasterJobRecruiter.aspx.cs">
       <DependentUpon>MasterJobRecruiter.aspx</DependentUpon>
@@ -161,6 +171,13 @@
     <Compile Include="JobRecruiterModule\JobRecruiterJobPost.aspx.designer.cs">
       <DependentUpon>JobRecruiterJobPost.aspx</DependentUpon>
     </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterJobPostShow.aspx.cs">
+      <DependentUpon>JobRecruiterJobPostShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterJobPostShow.aspx.designer.cs">
+      <DependentUpon>JobRecruiterJobPostShow.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JobRecruiterRegistration.aspx.cs">
       <DependentUpon>JobRecruiterRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -188,6 +205,13 @@
     </Compile>
     <Compile Include="JobSeekerModule\JobSeekerJobPost.aspx.designer.cs">
       <DependentUpon>JobSeekerJobPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerShowJobPost.aspx.cs">
+      <DependentUpon>JobSeekerShowJobPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerShowJobPost.aspx.designer.cs">
+      <DependentUpon>JobSeekerShowJobPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobSeekerRegistration.aspx.cs">
       <DependentUpon>JobSeekerRegistration.aspx</DependentUpon>

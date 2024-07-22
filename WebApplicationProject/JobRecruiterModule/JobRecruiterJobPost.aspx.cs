@@ -49,7 +49,7 @@ namespace WebApplicationProject.JobRecruiterModule
             {
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@action", "INSERT");
-                cmd.Parameters.AddWithValue("@JobRecruiterId", Session["JRID"]); // Ensure this session variable is set
+                cmd.Parameters.AddWithValue("@JobRecruiterId", Session["JRID"]);
                 cmd.Parameters.AddWithValue("@JobPostJobProfileId", ddljobprofile.SelectedValue);
                 cmd.Parameters.AddWithValue("@JobPostMode", rblworkingmode.SelectedValue);
                 cmd.Parameters.AddWithValue("@JobPostGender", rblgender.SelectedValue);

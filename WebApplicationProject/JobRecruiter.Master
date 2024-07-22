@@ -28,6 +28,7 @@
                         <div id="menu">
                             <ul class="menu">
                                 <li><a href="JobRecruiterModule/JobRecruiterHome.aspx"><span>Home</span></a></li>
+                                <li><a href="../JobRecruiterModule/JobRecruiterJobPostShow.aspx"><span>Job Post Show</span></a></li>
                                 <li><a href="../JobRecruiterModule/JobRecruiterJobPost.aspx"><span>Job Post</span></a></li>
                                 <li class="last"><a href="../LogoutForm.aspx"><span>LogOut</span></a></li>
                             </ul>
