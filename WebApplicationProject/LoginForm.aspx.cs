@@ -67,8 +67,10 @@ namespace WebApplicationProject
                 ad.Fill(dt);
                 conn.Close();
 
+
                 if (dt.Rows.Count > 0)
                 {
+                    Session["JRID"] = dt.Rows[0]["JobRecruiterId"];
                     Response.Redirect("~/JobRecruiterModule/JobRecruiterHome.aspx");
                 }
                 else

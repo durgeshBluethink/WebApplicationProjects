@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="JobRecruiter.master.cs" Inherits="WebApplicationProject.JobRecruiter" %>
+
 <%@ Register Src="~/Header.ascx" TagName="myhead" TagPrefix="asp" %>
 <%@ Register Src="~/Footer.ascx" TagName="myfoot" TagPrefix="asp" %>
 <!DOCTYPE html>
@@ -16,41 +17,39 @@
     <form id="form1" runat="server">
         <div>
             <table>
+                <tr>
+                    <td>
+                        <asp:myhead Id="h1" runat="server" />
+                    </td>
+                </tr>
 
-    <tr>
-        <td>
-            <asp:myhead Id="h1" runat="server"></asp:myhead>
-        </td>
-    </tr>
+                <tr>
+                    <td>
+                        <div id="menu">
+                            <ul class="menu">
+                                <li><a href="JobRecruiterModule/JobRecruiterHome.aspx"><span>Home</span></a></li>
+                                <li><a href="../JobRecruiterModule/JobRecruiterJobPost.aspx"><span>Job Post</span></a></li>
+                                <li class="last"><a href="../LogoutForm.aspx"><span>LogOut</span></a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
 
-    <tr>
-        <td>
-            <div id="menu">
-                <ul class="menu">
+                <tr>
+                    <td style="height: 330px; background-color: lightcyan; vertical-align: top;">
+                        <center>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </center>
+                    </td>
+                </tr>
 
-                    <li><a href="JobRecruiterModule/JobRecruiterHome.aspx"><span>Home</span></a></li>
-                    <li class="last"><a href="../LogoutForm.aspx"><span>LogOut</span></a></li>
-                </ul>
-            </div>
-        </td>
-    </tr>
-
-    <tr>
-        <td style="height: 330px; background-color: lightcyan;  vertical-align:top">
-            <center>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </center>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            <asp:myfoot Id="f1" runat="server"></asp:myfoot>
-        </td>
-    </tr>
-
-</table>
+                <tr>
+                    <td>
+                        <asp:myfoot Id="f1" runat="server" />
+                    </td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>

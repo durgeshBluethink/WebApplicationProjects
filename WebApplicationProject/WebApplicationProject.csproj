@@ -77,8 +77,10 @@
     <Content Include="images\main-bg.png" />
     <Content Include="images\main-delimiter.png" />
     <Content Include="JobRecruiterModule\JobRecruiterHome.aspx" />
+    <Content Include="JobRecruiterModule\JobRecruiterJobPost.aspx" />
     <Content Include="JobRecruiterRegistration.aspx" />
     <Content Include="JobSeekerModule\JobSeekerHome.aspx" />
+    <Content Include="JobSeekerModule\JobSeekerJobPost.aspx" />
     <Content Include="JobSeekerRegistration.aspx" />
     <Content Include="jquery.js" />
     <Content Include="LoginForm.aspx" />
@@ -152,6 +154,13 @@
     <Compile Include="JobRecruiterModule\JobRecruiterHome.aspx.designer.cs">
       <DependentUpon>JobRecruiterHome.aspx</DependentUpon>
     </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterJobPost.aspx.cs">
+      <DependentUpon>JobRecruiterJobPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobRecruiterModule\JobRecruiterJobPost.aspx.designer.cs">
+      <DependentUpon>JobRecruiterJobPost.aspx</DependentUpon>
+    </Compile>
     <Compile Include="JobRecruiterRegistration.aspx.cs">
       <DependentUpon>JobRecruiterRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +181,13 @@
     </Compile>
     <Compile Include="JobSeekerModule\JobSeekerHome.aspx.designer.cs">
       <DependentUpon>JobSeekerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerJobPost.aspx.cs">
+      <DependentUpon>JobSeekerJobPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobSeekerModule\JobSeekerJobPost.aspx.designer.cs">
+      <DependentUpon>JobSeekerJobPost.aspx</DependentUpon>
     </Compile>
     <Compile Include="JobSeekerRegistration.aspx.cs">
       <DependentUpon>JobSeekerRegistration.aspx</DependentUpon>
